@@ -1,0 +1,40 @@
+
+#include "TXLib.h"
+#include "lib.cpp"
+
+int main()
+    {
+    txCreateWindow (1280,720);
+    txSetFillColor(TX_WHITE);
+
+    int x = 270;
+    int y = 300;
+
+   HDC golova = txLoadImage("pictures\\333.bmp");
+
+
+   while (!GetAsyncKeyState('R')) {
+
+            txClear();
+            risovat_golova(golova,x,y);
+
+
+
+
+
+       void jam (int x, int y);
+             if (GetAsyncKeyState(VK_LEFT))
+    {
+           y=270;
+
+    }
+    //else if (GetAsyncKeyState(VK_RIGHT))
+  //  {
+    //    x = 370;
+//}
+
+    txSleep(10);
+    return 0;
+
+     }
+}

@@ -1,0 +1,8 @@
+
+#include "TXLib.h"
+
+
+//файл для рисования всех частей тел XD
+void risovat_golova(HDC golova) {
+    txTransparentBlt (txDC(), x, y, 270, 300, golova, 0, 0, TX_WHITE);
+}
